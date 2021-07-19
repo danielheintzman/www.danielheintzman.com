@@ -1,0 +1,195 @@
+$break-large: 992px;
+$break-medium: 768px;
+$break-small: 576px;
+
+@mixin spacing($mt,
+$mb) {
+  margin-top: $mt;
+  margin-bottom: $mb;
+}
+
+@mixin font-archive ($mt, $fs, $lh, $cl) {
+  margin-top: $mt;
+  font-size: $fs;
+  line-height: $lh;
+  color: $cl;
+}
+
+
+.hero-title {
+  .header  {
+    @include font-archive(0px, 36px, 42px, #111111);
+  }
+  p{
+    @include font-archive(12px, 18px, 30px, #333333);
+  }
+}
+.container-archive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  max-width: 1120px;
+  margin: 20px auto;
+  .sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: center;
+    width: 49%; 
+    .full {
+        margin-top: 15px;
+        padding-bottom: 27px;
+        border-radius: 3px;
+      img {
+        width: 100%;
+        border-radius: 3px;
+        
+      }
+      .desc {
+        width: 100%;
+        text-align: left;
+        padding: 34px 20px 165px 10px;
+        box-sizing: border-box;
+        h2 {
+          @include font-archive(20px, 21px, 27px, #111111);
+          padding-bottom: 8px;
+          margin-top: 0;        
+        }
+        p {
+          @include font-archive(10px, 14px, 30px, #888888);
+          letter-spacing: 0.17px;
+          margin-top: 0;
+        }
+      }
+      &:hover {
+        background-color: #fafafa;
+      }
+    }
+    .half {
+      display: flex;
+      align-items: flex-start;
+      flex-flow: row;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      margin-bottom: 22px;
+      border-radius: 3px;
+      img {
+        width: 35%;
+        border-radius: 3px;
+      }
+      .desc {
+        width: 65%;
+        text-align: left;
+        padding: 0 20px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        h2 {
+          @include font-archive(20px, 18px, 23px, #111111);
+          padding-bottom: 8px;
+          margin-top: 9px;        
+        }
+        p {
+          @include font-archive(10px, 14px, 30px, #888888);
+          letter-spacing: 0.17px;
+          margin-top: 0;
+        }
+      }
+      &:hover {
+        background-color: #fafafa;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $break-large) {	
+	.container-archive {  
+    width: 95%;
+    .sub-container {
+      width: 48%;   
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {	
+	.container-archive {
+    max-width: 90%;
+    .sub-container { 
+      .full{
+        .desc {
+          padding: 30px 10px;
+          h2 {
+            @include font-archive(20px, 16px, 18px, #111111);        
+          }
+          p {
+            @include font-archive(10px, 12px, 15px, #888888);
+          }
+        }
+      }
+      .half {
+        .desc {
+          padding: 0 10px;
+          h2 {
+            @include font-archive(20px, 16px, 18px, #111111);        
+          }
+          p {
+            @include font-archive(10px, 12px, 15px, #888888);
+          }
+        }
+      }      
+    }
+  }
+}
+
+@media screen and (max-width: $break-small) {	
+	.container-archive {
+    width: 90%;
+    .sub-container {
+      width: 100%;
+      &.first {
+        order: 1;
+      }
+      &.second {
+        order: 2;
+      }
+      .full {
+        img {
+          margin-top: 15px;
+          margin-bottom: 15px
+        }
+        .desc {
+          padding: 40px 10px;
+          h2 {
+            @include font-archive(20px, 18px, 27px, #111111);        
+          }
+          p {
+            @include font-archive(10px, 13px, 18px, #888888);
+          }
+        }
+      }
+      
+      .half {
+        img {
+          margin-top: 15px;
+          margin-bottom: 15px
+        }
+        .desc {
+          padding: 0 10px;
+          h2 {
+            @include font-archive(20px, 18px, 27px, #111111);        
+          }
+          p {
+            @include font-archive(10px, 13px, 18px, #888888);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+img {
+  border-radius: 8px;
+}

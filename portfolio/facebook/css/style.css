@@ -1,0 +1,446 @@
+.process-image {
+  max-width: 100%;
+  padding: 0 5%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-image {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.facebook-container {
+  width: 100%;
+  max-width: 764px;
+  margin: 40px auto;
+}
+
+.facebook-container.image {
+  margin-top: 50px;
+  max-width: 80%;
+}
+
+.facebook-container.image .facebook-images {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.facebook-container.image .facebook-images img {
+  width: 100%;
+  height: 100%;
+}
+
+.facebook-container.image .facebook-images img.two {
+  width: 25%;
+}
+
+.facebook-container.image .link {
+  margin: 30px auto;
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.facebook-container.image .link a {
+  color: #666666;
+  font-size: 16px;
+  letter-spacing: 0.17px;
+  line-height: 30px;
+  display: inline;
+  position: relative;
+}
+
+.facebook-container.image .link a:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 100%;
+  bottom: 0px;
+  background: #000;
+  height: 1px;
+  -webkit-transition-property: left right;
+  transition-property: left right;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  margin-bottom: -1px;
+}
+
+.facebook-container.image .link a:hover:after, .facebook-container.image .link a:focus:after, .facebook-container.image .link a:active:after {
+  right: 0;
+}
+
+.facebook-container.image .link a.active {
+  color: #222222;
+  border-bottom: 1px solid #222222;
+  margin-bottom: -1px;
+}
+
+.facebook-container h1 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #111111;
+  letter-spacing: 0.26px;
+  line-height: 33px;
+}
+
+.facebook-container p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0.17px;
+  line-height: 30px;
+}
+
+.facebook-container ol {
+  margin-top: 20px;
+  padding-left: 10px;
+  list-style: decimal;
+}
+
+.facebook-container ol li {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0.17px;
+  line-height: 30px;
+}
+
+.hero-title.facebook {
+  margin-top: 236px;
+  margin-bottom: 236px;
+  text-align: center;
+}
+
+.hero-title.facebook .facebook-title {
+  margin-top: 0px;
+  font-size: 30px;
+  line-height: 42px;
+  color: #111111;
+}
+
+.hero-title.facebook p {
+  margin-top: 40px;
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #111111;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 992px) {
+  .facebook-container {
+    margin: 30px auto;
+  }
+  .facebook-container.image {
+    margin-top: 30px;
+    max-width: 85%;
+  }
+  .facebook-container.image .facebook-images img.two {
+    width: 30%;
+  }
+  .facebook-container.image .link {
+    max-width: 300px;
+  }
+  .facebook-container.image .link a {
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .facebook-container h1 {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .facebook-container p {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .facebook-container ol {
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+  .facebook-container ol li {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .hero-image {
+    padding: 0%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .facebook-container {
+    margin: 25px auto;
+    max-width: 500px;
+  }
+  .facebook-container.image {
+    margin-top: 30px;
+    max-width: 90%;
+  }
+  .facebook-container.image .facebook-images img.two {
+    width: 35%;
+  }
+  .facebook-container.image .link {
+    max-width: 220px;
+  }
+  .facebook-container.image .link a {
+    padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .facebook-container h1 {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .facebook-container p {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .facebook-container ol {
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+  .facebook-container ol li {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .hero-image {
+    margin-top: 0;
+  }
+  .facebook-container p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .facebook-container ol li {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .hero-title {
+    margin-top: 120px;
+  }
+  .hero-title.facebook {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .hero-title.facebook h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .hero-title.facebook p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .facebook-container {
+    margin: 15px auto;
+    max-width: 90%;
+  }
+  .facebook-container.image {
+    margin-top: 20px;
+    max-width: 90%;
+  }
+  .facebook-container.image .facebook-images img.two {
+    width: 45%;
+  }
+  .facebook-container.image .link {
+    max-width: 180px;
+  }
+  .facebook-container.image .link a {
+    padding-bottom: 5px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .facebook-container h1 {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .facebook-container p {
+    margin-top: 10px;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: #333333 !important;
+  }
+  .facebook-container ol {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .facebook-container ol li {
+    margin-top: 10px;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: #333333 !important;
+  }
+  .hero-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .hero-title.facebook {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .hero-title.facebook h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #111111;
+  }
+  .hero-title.facebook p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    padding: 0 20px;
+  }
+}
+
+.footer-facebook {
+  height: 100px;
+}
+
+.circCont {
+  width: 100px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 35px;
+  left: calc(50% - 50px);
+}
+
+#btn-close {
+  width: 50px;
+  height: 50px;
+  background-color: #101010;
+  border-radius: 25px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#btn-close-expand {
+  width: 0px;
+  height: 50px;
+  background-color: #101010;
+  border-radius: 25px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+#btn-close-expand .btn-title {
+  font-size: 15px;
+  color: #f3f3f3;
+  margin-top: 18px;
+  margin-left: 46px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+#btn-close-expand .circle {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: solid 2px #f3f3f3;
+  border-radius: 25px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+#btn-close-expand .circle:before {
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+  width: 10px;
+  height: 2px;
+  background-color: #f3f3f3;
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#btn-close-expand .circle:after {
+  width: 10px;
+  height: 2px;
+  background-color: #f3f3f3;
+  content: "";
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#btn-close:before {
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -1px;
+  width: 15px;
+  height: 2px;
+  background-color: #f3f3f3;
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#btn-close:after {
+  width: 15px;
+  height: 2px;
+  background-color: #f3f3f3;
+  content: "";
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -1px;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/*# sourceMappingURL=style.css.map */
